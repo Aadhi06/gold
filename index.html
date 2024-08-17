@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Buying Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gold Store</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to Gold Store</h2>
+            <p>Your trusted partner in gold buying</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Gold Store has been providing quality gold products for over 20 years. We guarantee the highest purity and best prices.</p>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="gold1.jpg" alt="Gold Coin">
+                    <h3>Gold Coin</h3>
+                    <p>24k pure gold coin.</p>
+                    <p class="price">$500</p>
+                    <button class="btn buy-btn">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="gold2.jpg" alt="Gold Bar">
+                    <h3>Gold Bar</h3>
+                    <p>1 ounce gold bar.</p>
+                    <p class="price">$1800</p>
+                    <button class="btn buy-btn">Buy Now</button>
+                </div>
+                <div class="product-card">
+                    <img src="gold3.jpg" alt="Gold Necklace">
+                    <h3>Gold Necklace</h3>
+                    <p>Elegant gold necklace.</p>
+                    <p class="price">$1200</p>
+                    <button class="btn buy-btn">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gold Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

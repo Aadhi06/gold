@@ -141,3 +141,72 @@ form textarea {
     height: 150px;
     resize: none;
 }
+/* Add your existing CSS and include styles for the new elements below */
+
+#hero {
+    background: url('../images/gold-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#why-us {
+    background: #f7f7f7;
+    padding: 60px 0;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+}
+
+#sell-gold {
+    background: #fff;
+    padding: 60px 0;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+form .form-group {
+    margin-bottom: 20px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #ffd700;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#requests table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#requests table th, #requests table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+

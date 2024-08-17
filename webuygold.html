@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Gold | Gold Buyers</title>
+    <link rel="stylesheet" href="assets/css/styless.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gold Buyers</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="we-buy-gold.html">Sell Your Gold</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="sell-gold">
+        <div class="container">
+            <h2>Sell Your Gold</h2>
+            <p>Fill out the form below to get a quote for your gold.</p>
+            <form id="sellGoldForm" action="process_form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="goldType">Type of Gold:</label>
+                    <select id="goldType" name="goldType" required>
+                        <option value="coin">Gold Coin</option>
+                        <option value="bar">Gold Bar</option>
+                        <option value="jewelry">Jewelry</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="weight">Weight (in grams):</label>
+                    <input type="number" id="weight" name="weight" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Additional Information:</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <button type="submit" class="btn">Get a Quote</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Gold Buyers. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

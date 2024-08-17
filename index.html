@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="assets/css/styless.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <div class="container">
-            <h1>Gold Buyers</h1>
+            <h1>Fine Gold Buyers</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -20,7 +21,26 @@
             </nav>
         </div>
     </header>
+    
+    <!-- Slider Section -->
+    <section id="slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="assets/imgs/sell-gold-banner.webp" alt="Gold Image 1">
+            </div>
+            <div class="slide">
+                <img src="assets/images/gold2.jpg" alt="Gold Image 2">
+            </div>
+            <div class="slide">
+                <img src="assets/images/gold3.jpg" alt="Gold Image 3">
+            </div>
 
+            <!-- Slider Controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+    
     <!-- Hero Section with Call to Action -->
     <section id="hero">
         <div class="container">
@@ -53,7 +73,92 @@
             </div>
         </div>
     </section>
-
+    
+    <!-- Metal Calculator Section -->
+    <section id="metal-calculator">
+       
+        <div class="container">
+             <h2> Live Scrap Calculator </h2>
+            <div class="metal-calculator-body">
+                <div class="metal-calculator-container">
+                    <div class="metal-calculator-header">
+                        <div>Our Gold Price - £<span id="pricePerOunce">1812.14</span> / oz</div>
+                        <div>Latest Updated Time - <span id="updatedtime">16-08-2024 10.00 AM</span></div>
+                    </div>
+                    <div class="metal-calculator">
+                        <table class="metal-calculator-table">
+                            <thead>
+                                <tr>
+                                    <th>Grams</th>
+                                    <th>Description</th>
+                                    <th>Total Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="number" id="grams9k" class="metal-calculator-input" value="0" min="0"></td>
+                                    <td>9k Gold</td>
+                                    <td>£<span id="price9k">0.00</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" id="grams10k" class="metal-calculator-input" value="0" min="0"></td>
+                                    <td>10k Gold</td>
+                                    <td>£<span id="price10k">0.00</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" id="grams12k" class="metal-calculator-input" value="0" min="0"></td>
+                                    <td>12k Gold</td>
+                                    <td>£<span id="price12k">0.00</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" id="grams14k" class="metal-calculator-input" value="0" min="0"></td>
+                                    <td>14k Gold</td>
+                                    <td>£<span id="price14k">0.00</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" id="grams15k" class="metal-calculator-input" value="0" min="0"></td>
+                                    <td>15k Gold</td>
+                                    <td>£<span id="price15k">0.00</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" id="grams18k" class="metal-calculator-input" value="0" min="0"></td>
+                                    <td>18k Gold</td>
+                                    <td>£<span id="price18k">0.00</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" id="grams21k" class="metal-calculator-input" value="0" min="0"></td>
+                                    <td>21k Gold</td>
+                                    <td>£<span id="price21k">0.00</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" id="grams22kc" class="metal-calculator-input" value="0" min="0"></td>
+                                    <td>22k Coins</td>
+                                    <td>£<span id="price22kc">0.00</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" id="grams22k" class="metal-calculator-input" value="0" min="0"></td>
+                                    <td>22k Gold</td>
+                                    <td>£<span id="price22k">0.00</span></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="number" id="grams24k" class="metal-calculator-input" value="0" min="0"></td>
+                                    <td>24k Gold</td>
+                                    <td>£<span id="price24k">0.00</span></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="metal-calculator-total-row">
+                                    <td colspan="2">Total Amount</td>
+                                    <td>£<span id="totalAmount">0.00</span></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- Contact Form Section -->
     <section id="contact">
         <div class="container">
@@ -76,6 +181,7 @@
         </div>
     </section>
 
+    <!-- Footer Section -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Gold Buyers. All rights reserved.</p>
